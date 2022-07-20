@@ -7,6 +7,11 @@ class BasePageLocators:
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 
+class BasketPageLocators:
+    BASKET_IS_EMPTY_MESSAGE = (By.CSS_SELECTOR, "#content_inner p")
+    BASKET_ITEMS = (By.CSS_SELECTOR, "div.basket-items")
+
+
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
@@ -24,8 +29,3 @@ class ProductPageLocators:
     MESSAGE_WITH_TOTAL_PRICE = (By.CSS_SELECTOR, ".alert-info")
     TOTAL_PRICE = (By.CSS_SELECTOR, ".alert-info strong")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
-
-
-class BasketPageLocators:
-    BASKET_IS_EMPTY_MESSAGE = (By.CSS_SELECTOR, "#content_inner p")
-    BASKET_ITEMS = (By.CSS_SELECTOR, "div.basket-items")
